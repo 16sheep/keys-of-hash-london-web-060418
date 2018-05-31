@@ -4,7 +4,7 @@ class Hash
     arr = []
      self.each {|key, value| 
       if arguments.include?(value)
-      arr.push(value)
+        arr.push(value)
       end
      }
   end
