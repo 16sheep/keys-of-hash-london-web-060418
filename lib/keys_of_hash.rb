@@ -7,7 +7,7 @@ class Hash
         arr.push(value)
       end
      }
+    arr
   end
-  arr
 end
 
