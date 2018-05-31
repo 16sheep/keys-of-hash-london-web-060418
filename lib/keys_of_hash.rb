@@ -2,9 +2,21 @@ class Hash
   arr = []
   def keys_of(*arguments)
     arr = []
-     arguments.each{|key, value| 
-     if value = self.value
+     self.each {|key, value| 
+     if arguments. = self.value
      arr.push(key)}
     arr
+  end
+end
+
+class Hash
+  def keys_of(*arguments)
+    matches = []
+    self.each do |key, value|
+      if arguments.include?(value)
+        matches << key
+      end
+    end
+    return matches
   end
 end
