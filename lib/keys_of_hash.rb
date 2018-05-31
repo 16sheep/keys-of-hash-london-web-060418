@@ -3,10 +3,10 @@ class Hash
   def keys_of(*arguments)
     arr = []
      self.each {|key, value| 
-     if arguments. = self.value
-     arr.push(key)}
-    arr
+     if arguments.include?(value)
+     arr.push(value)}
   end
+  arr
 end
 
 class Hash
